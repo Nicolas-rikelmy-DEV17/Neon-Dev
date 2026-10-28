@@ -1,0 +1,348 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080811">
+  <title>NEON LAB | Iury & Nicolas</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="background-grid"></div>
+  <div class="glow glow-one"></div>
+  <div class="glow glow-two"></div>
+
+  <header class="navbar">
+    <a href="#inicio" class="logo">NEON<span>LAB.</span></a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+      ☰
+    </button>
+
+    <nav id="navMenu">
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#tecnologias">Tecnologias</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#equipe">Equipe</a>
+    </nav>
+
+    <a href="#contato" class="nav-button">Vamos conversar ↗</a>
+  </header>
+
+  <main>
+    <!-- 1. INÍCIO -->
+    <section class="hero section" id="inicio">
+      <div class="hero-content reveal">
+        <span class="eyebrow"><span class="status-dot"></span> CRIATIVIDADE + TECNOLOGIA</span>
+
+        <h1>
+          O FUTURO<br>
+          É <span class="gradient-text">CRIADO.</span>
+        </h1>
+
+        <p class="hero-description">
+          Transformamos ideias em experiências digitais.
+          Um laboratório criativo onde código, design e tecnologia
+          se encontram para criar algo extraordinário.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projetos" class="button button-primary">Explorar projetos ↗</a>
+          <a href="#sobre" class="button button-secondary">Conhecer o laboratório</a>
+        </div>
+
+        <div class="hero-stats">
+          <div><strong>02</strong><span>Criadores</span></div>
+          <div><strong>08</strong><span>Experiências</span></div>
+          <div><strong>∞</strong><span>Possibilidades</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="orbit orbit-three"></div>
+
+        <div class="planet">
+          <div class="planet-core"></div>
+        </div>
+
+        <div class="floating-card card-top">
+          <span class="mini-icon">✦</span>
+          <div><strong>Design futurista</strong><small>Ideias sem limites</small></div>
+        </div>
+
+        <div class="floating-card card-bottom">
+          <span class="mini-icon green">⌘</span>
+          <div><strong>Code & Create</strong><small>Construindo o amanhã</small></div>
+        </div>
+
+        <div class="visual-label">CREATIVE MODE / ON</div>
+      </div>
+
+      <a href="#sobre" class="scroll-indicator">ROLE PARA DESCOBRIR ↓</a>
+    </section>
+
+    <!-- 2. SOBRE -->
+    <section class="section content-section" id="sobre">
+      <div class="section-heading reveal">
+        <span class="eyebrow">01 / NOSSA VISÃO</span>
+        <h2>Ideias que saem<br>da <span class="gradient-text">tela.</span></h2>
+        <p>Não queremos apenas criar sites. Queremos criar experiências.</p>
+      </div>
+
+      <div class="about-grid">
+        <article class="glass-card about-card reveal">
+          <span class="card-number">01</span>
+          <div class="big-symbol purple">✳</div>
+          <h3>Criatividade</h3>
+          <p>Exploramos novas possibilidades e transformamos conceitos em experiências visuais únicas.</p>
+          <span class="tag">THINK DIFFERENT</span>
+        </article>
+
+        <article class="glass-card about-card reveal">
+          <span class="card-number">02</span>
+          <div class="big-symbol green">⌘</div>
+          <h3>Tecnologia</h3>
+          <p>Utilizamos programação para construir interfaces, interações e soluções digitais.</p>
+          <span class="tag">BUILD THE FUTURE</span>
+        </article>
+
+        <article class="glass-card about-card reveal">
+          <span class="card-number">03</span>
+          <div class="big-symbol pink">◈</div>
+          <h3>Experiência</h3>
+          <p>Cada detalhe importa: animações, acessibilidade, responsividade e facilidade de uso.</p>
+          <span class="tag">USER FIRST</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3. TECNOLOGIAS -->
+    <section class="section content-section" id="tecnologias">
+      <div class="section-heading reveal">
+        <span class="eyebrow">02 / NOSSO UNIVERSO</span>
+        <h2>As ferramentas<br>da <span class="gradient-text">criação.</span></h2>
+        <p>Tecnologias que permitem transformar uma ideia em realidade.</p>
+      </div>
+
+      <div class="tech-grid">
+        <article class="tech-card reveal">
+          <div class="tech-icon orange">5</div>
+          <h3>HTML5</h3>
+          <p>A estrutura que dá vida às páginas.</p>
+          <div class="progress"><span style="width:90%"></span></div>
+          <small>ESTRUTURA</small>
+        </article>
+
+        <article class="tech-card reveal">
+          <div class="tech-icon blue">#</div>
+          <h3>CSS3</h3>
+          <p>Estilo, animações e layouts responsivos.</p>
+          <div class="progress"><span style="width:85%"></span></div>
+          <small>DESIGN</small>
+        </article>
+
+        <article class="tech-card reveal">
+          <div class="tech-icon yellow">JS</div>
+          <h3>JavaScript</h3>
+          <p>Interações e funcionalidades dinâmicas.</p>
+          <div class="progress"><span style="width:80%"></span></div>
+          <small>INTERATIVIDADE</small>
+        </article>
+
+        <article class="tech-card reveal">
+          <div class="tech-icon cyan">TS</div>
+          <h3>TypeScript</h3>
+          <p>JavaScript com tipos para organizar o código.</p>
+          <div class="progress"><span style="width:70%"></span></div>
+          <small>TIPAGEM</small>
+        </article>
+
+        <article class="tech-card reveal">
+          <div class="tech-icon purple">3D</div>
+          <h3>Three.js</h3>
+          <p>Gráficos e objetos tridimensionais no navegador.</p>
+          <div class="progress"><span style="width:75%"></span></div>
+          <small>IMERSÃO</small>
+        </article>
+
+        <article class="tech-card reveal">
+          <div class="tech-icon green">AI</div>
+          <h3>Inteligência artificial</h3>
+          <p>Uma ferramenta para explorar ideias e acelerar o aprendizado.</p>
+          <div class="progress"><span style="width:80%"></span></div>
+          <small>INOVAÇÃO</small>
+        </article>
+      </div>
+      <p class="note">As barras são ilustrativas e representam áreas de exploração, não avaliações de habilidade.</p>
+    </section>
+
+    <!-- 4. EXPERIÊNCIA 3D -->
+    <section class="section content-section" id="experiencia">
+      <div class="section-heading reveal">
+        <span class="eyebrow">03 / EXPERIMENTO DIGITAL</span>
+        <h2>Entre na <span class="gradient-text">terceira dimensão.</span></h2>
+        <p>Mova o mouse e observe o objeto. A experiência é renderizada em tempo real.</p>
+      </div>
+
+      <div class="three-panel reveal">
+        <div id="threeCanvas" aria-label="Objeto tridimensional interativo"></div>
+        <div class="three-overlay">
+          <span class="eyebrow">LIVE RENDER / 001</span>
+          <h3>Digital Matter</h3>
+          <p>Geometria, luz e movimento em um único espaço.</p>
+          <button class="button button-primary" id="changeObject">Alterar geometria ↗</button>
+        </div>
+        <div class="three-coordinate">X / Y / Z<br><span>INTERACTIVE</span></div>
+      </div>
+    </section>
+
+    <!-- 5. PROJETOS -->
+    <section class="section content-section" id="projetos">
+      <div class="section-heading reveal">
+        <span class="eyebrow">04 / EXPERIMENTOS</span>
+        <h2>Pequenas ideias.<br><span class="gradient-text">Grandes possibilidades.</span></h2>
+        <p>Conceitos que demonstram como tecnologia e criatividade podem trabalhar juntas.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card project-purple reveal">
+          <div class="project-art"><span>◉</span><div class="project-orbit"></div></div>
+          <div class="project-info">
+            <span class="tag">EXPERIMENTO 001</span>
+            <h3>Cosmic Interface</h3>
+            <p>Uma interface inspirada no universo, com formas e movimento.</p>
+            <a href="#experiencia">Ver experiência ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card project-green reveal">
+          <div class="project-art"><span>⌘</span><div class="project-cube"></div></div>
+          <div class="project-info">
+            <span class="tag">EXPERIMENTO 002</span>
+            <h3>Neon Playground</h3>
+            <p>Um espaço para explorar interações, cores e efeitos visuais.</p>
+            <a href="#playground">Testar playground ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card project-pink reveal">
+          <div class="project-art"><span>✳</span><div class="project-rings"></div></div>
+          <div class="project-info">
+            <span class="tag">EXPERIMENTO 003</span>
+            <h3>Future Motion</h3>
+            <p>Movimento e animação para interfaces mais expressivas.</p>
+            <a href="#processo">Conhecer processo ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 6. EQUIPE -->
+    <section class="section content-section" id="equipe">
+      <div class="section-heading reveal">
+        <span class="eyebrow">05 / QUEM ESTÁ POR TRÁS</span>
+        <h2>Duas mentes.<br><span class="gradient-text">Uma visão.</span></h2>
+        <p>Conheça os criadores do NEON LAB.</p>
+      </div>
+
+      <div class="team-grid">
+        <article class="team-card reveal">
+          <div class="avatar avatar-purple">IM</div>
+          <span class="tag">CREATIVE DEVELOPER</span>
+          <h3>Iury Madeira</h3>
+          <p>Desenvolvedor</p>
+          <div class="team-line"></div>
+          <span class="team-description">Criatividade, tecnologia e novas ideias.</span>
+        </article>
+
+        <article class="team-card reveal">
+          <div class="avatar avatar-green">NR</div>
+          <span class="tag">DIGITAL DEVELOPER</span>
+          <h3>Nicolas Rikelmy</h3>
+          <p>Dev</p>
+          <div class="team-line"></div>
+          <span class="team-description">Código, experiências e construção digital.</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- 7. PROCESSO -->
+    <section class="section content-section" id="processo">
+      <div class="section-heading reveal">
+        <span class="eyebrow">06 / NOSSO PROCESSO</span>
+        <h2>Do primeiro rabisco<br>ao <span class="gradient-text">resultado.</span></h2>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <span class="timeline-number">01</span>
+          <div><h3>Imaginar</h3><p>Definir a ideia, o objetivo e a experiência que queremos criar.</p></div>
+        </article>
+        <article class="timeline-item reveal">
+          <span class="timeline-number">02</span>
+          <div><h3>Projetar</h3><p>Planejar as telas, as cores, a estrutura e a navegação.</p></div>
+        </article>
+        <article class="timeline-item reveal">
+          <span class="timeline-number">03</span>
+          <div><h3>Desenvolver</h3><p>Construir com HTML, CSS, JavaScript e ferramentas complementares.</p></div>
+        </article>
+        <article class="timeline-item reveal">
+          <span class="timeline-number">04</span>
+          <div><h3>Experimentar</h3><p>Testar, corrigir e aprimorar a experiência em diferentes dispositivos.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 8. PLAYGROUND -->
+    <section class="section content-section" id="playground">
+      <div class="section-heading reveal">
+        <span class="eyebrow">07 / ÁREA DE EXPERIMENTOS</span>
+        <h2>Agora é <span class="gradient-text">sua vez.</span></h2>
+        <p>Experimente os controles abaixo. Eles alteram o comportamento desta página.</p>
+      </div>
+
+      <div class="playground glass-card reveal">
+        <div>
+          <span class="eyebrow">INTERACTIVE MODE</span>
+          <h3>Laboratório de cores</h3>
+          <p>Troque o tema visual ou ative o modo festa.</p>
+        </div>
+        <div class="playground-controls">
+          <button class="color-button" data-color="#a855f7" aria-label="Tema roxo" style="--swatch:#a855f7"></button>
+          <button class="color-button" data-color="#00e5a8" aria-label="Tema verde" style="--swatch:#00e5a8"></button>
+          <button class="color-button" data-color="#ff4fd8" aria-label="Tema rosa" style="--swatch:#ff4fd8"></button>
+          <button class="button button-primary" id="partyMode">✦ Modo festa</button>
+          <button class="button button-secondary" id="clickCounter">Cliques: <span id="clickCount">0</span></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. CONTATO -->
+    <section class="section contact-section" id="contato">
+      <div class="contact-box reveal">
+        <span class="eyebrow">08 / PRÓXIMA ETAPA</span>
+        <h2>Vamos criar algo<br><span class="gradient-text">extraordinário?</span></h2>
+        <p>Este é apenas o começo. O próximo experimento pode ser a sua ideia.</p>
+        <a href="#inicio" class="button button-primary">Voltar ao início ↑</a>
+        <div class="contact-decoration">N/L</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#inicio" class="logo">NEON<span>LAB.</span></a>
+    <p>Feito com criatividade por Iury Madeira & Nicolas Rikelmy.</p>
+    <span>© <span id="year"></span> — PROJETO EDUCACIONAL</span>
+  </footer>
+</body>
+</html>
